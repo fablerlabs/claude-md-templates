@@ -46,7 +46,7 @@ guessing. This repo gives you a battle-tested starting point instead of a blank 
 ## Use it as a Claude Code plugin
 
 Instead of copy-pasting, install this repo as a
-[Claude Code plugin](https://code.claude.com/docs/en/plugins) and get two slash
+[Claude Code plugin](https://code.claude.com/docs/en/plugins) and get three slash
 commands that do the work in-place:
 
 ```
@@ -60,6 +60,10 @@ commands that do the work in-place:
 - **`/claude-md-audit`** — grades an existing `CLAUDE.md`/`AGENTS.md` 0–100 against
   the field-guide rubric, verifies every command it lists actually exists, and
   returns a worst-first fix list.
+- **`/claude-md-migrate`** — rewrites a bloated or stale `CLAUDE.md` into the lean
+  "map, not wishes" style: verifies every claim against your manifests/CI, drops
+  what's invented or generic (and tells you what and why), carries your hard rules
+  over verbatim, and shows a diff-style summary before writing.
 
 (The marketplace lives on [fablerlabs/relay](https://github.com/fablerlabs/relay),
 which hosts all Fabler Labs plugins.)

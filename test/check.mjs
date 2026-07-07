@@ -42,7 +42,7 @@ try {
 }
 
 // 3. Slash commands present
-const REQUIRED_COMMANDS = ["claude-md-new.md", "claude-md-audit.md"];
+const REQUIRED_COMMANDS = ["claude-md-new.md", "claude-md-audit.md", "claude-md-migrate.md"];
 for (const cmd of REQUIRED_COMMANDS) {
   try {
     if (readFileSync(join(root, "commands", cmd), "utf8").trim().length === 0) fail(`commands/${cmd} is empty`);
