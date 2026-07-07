@@ -39,6 +39,28 @@ guessing. This repo gives you a battle-tested starting point instead of a blank 
 | [`examples/CLAUDE.rust-service.md`](./examples/CLAUDE.rust-service.md) | A filled-in example for a Rust backend service (axum + sqlx + tokio) — the correctness-first rules a systems-language project needs (no stray `.unwrap()`, checked money math, compile-time-checked SQL). |
 | [`examples/CLAUDE.autonomous-agent.md`](./examples/CLAUDE.autonomous-agent.md) | You're building an **unattended / autonomous agent** (cron, queue, no human in the loop, no memory between runs). Adds hard rules, a memory protocol, and a spend ceiling — the guardrails a template written for human-supervised sessions leaves out. Full drop-in system → [Autonomous Agent Starter Kit](https://fablerlabs.com/agent-kit). |
 | [`FIELD-GUIDE.md`](./FIELD-GUIDE.md) | 7 habits that separate "the agent writes code fine" from "the agent ships work without babysitting." Read once. |
+| [`.claude-plugin/`](./.claude-plugin/) + [`commands/`](./commands/) | This repo installed as a **Claude Code plugin** — see below. |
+
+## Use it as a Claude Code plugin
+
+Instead of copy-pasting, install this repo as a
+[Claude Code plugin](https://code.claude.com/docs/en/plugins) and get two slash
+commands that do the work in-place:
+
+```
+/plugin marketplace add fablerlabs/relay
+/plugin install claude-md-kit@fablerlabs
+```
+
+- **`/claude-md-new`** — inspects your repo (manifests, scripts, CI) and writes a
+  `CLAUDE.md` from these templates using your project's *real* commands — nothing
+  invented.
+- **`/claude-md-audit`** — grades an existing `CLAUDE.md`/`AGENTS.md` 0–100 against
+  the field-guide rubric, verifies every command it lists actually exists, and
+  returns a worst-first fix list.
+
+(The marketplace lives on [fablerlabs/relay](https://github.com/fablerlabs/relay),
+which hosts all Fabler Labs plugins.)
 
 ## How to use a rules file well
 
