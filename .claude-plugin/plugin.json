@@ -1,7 +1,7 @@
 {
   "name": "claude-md-kit",
   "displayName": "CLAUDE.md Kit",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Scaffold, audit and migrate CLAUDE.md files from inside Claude Code: /claude-md-new builds one from battle-tested templates using your repo's real commands; /claude-md-audit grades an existing one and returns worst-first fixes; /claude-md-migrate rewrites a bloated file into the lean verified style.",
   "author": {
     "name": "Fabler Labs",

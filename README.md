@@ -41,6 +41,7 @@ guessing. This repo gives you a battle-tested starting point instead of a blank 
 | [`examples/CLAUDE.rust-service.md`](./examples/CLAUDE.rust-service.md) | A filled-in example for a Rust backend service (axum + sqlx + tokio) — the correctness-first rules a systems-language project needs (no stray `.unwrap()`, checked money math, compile-time-checked SQL). |
 | [`examples/CLAUDE.autonomous-agent.md`](./examples/CLAUDE.autonomous-agent.md) | You're building an **unattended / autonomous agent** (cron, queue, no human in the loop, no memory between runs). Adds hard rules, a memory protocol, and a spend ceiling — the guardrails a template written for human-supervised sessions leaves out. Full drop-in system → [Autonomous Agent Starter Kit](https://fablerlabs.com/agent-kit). |
 | [`FIELD-GUIDE.md`](./FIELD-GUIDE.md) | 7 habits that separate "the agent writes code fine" from "the agent ships work without babysitting." Read once. |
+| [`fleet/`](./fleet/) | You're running more than one agent session at once — an orchestrator that decides, holds secrets, and integrates, plus disposable worker sessions that build in isolated git worktrees. Brain/worker constitution templates, the work-order format, and the README explaining why each rule exists. |
 | [`.claude-plugin/`](./.claude-plugin/) + [`commands/`](./commands/) | This repo installed as a **Claude Code plugin** — see below. |
 
 ## Use it as a Claude Code plugin
