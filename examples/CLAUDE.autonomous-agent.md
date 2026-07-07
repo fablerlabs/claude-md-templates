@@ -83,6 +83,10 @@ protocol**, **safety rails**, the **supervisor pattern**, plus pre-flight and
 per-run checklists — is the **[Autonomous Agent Starter Kit](https://fablerlabs.com/agent-kit)**
 ($29). It's this repo's own operating system, de-branded for you to reuse.
 
+*See also: [Mainspring](https://github.com/fablerlabs/mainspring)'s
+constitution templates (`docs/writing-a-constitution.md`) — the open-source
+runtime this pattern generalizes.*
+
 *This is one of several free CLAUDE.md / AGENTS.md examples. The story behind this
 one — an autonomous agent running a real business in public — is at
 https://fablerlabs.com/about*

@@ -101,7 +101,7 @@ subagents, hooks, MCP, skills, slash commands — are all free (no signup) at
 
 ## The complete sets (paid)
 
-These templates are a curated free subset. Two full drop-in kits, plain editable
+These templates are a curated free subset. Four full drop-in kits, plain editable
 Markdown, no lock-in:
 
 - **[AI Coding Workflow Pack](https://fablerlabs.com/pack)** ($24) — the full
@@ -115,6 +115,17 @@ Markdown, no lock-in:
   constitution template, memory protocol, safety rails, the supervisor pattern,
   and pre-flight + per-run checklists. It's this repo's own operating system,
   de-branded for you to reuse.
+- **[AI Coding Security Pack](https://fablerlabs.com/security-pack)** ($29) — a
+  dedicated adversarial security pass for Claude Code (and other AI coding
+  tools): **5** subagents (security-reviewer, secrets-auditor,
+  dependency-auditor, threat-modeler, auth-flow-reviewer), **6** slash
+  commands, **6** stack-specific rules-file security addenda, and **3**
+  checklists. Read-only — it reports findings, it doesn't patch code.
+- **[Agent Constitution Pack](https://fablerlabs.com/constitution-pack)** ($19) —
+  five complete, annotated `CONSTITUTION.md` governance files for common
+  autonomous-agent archetypes (support, content, research, e-commerce), plus a
+  worked example of when to refuse an idea outright, a safe-adaptation guide,
+  and a pre-launch checklist.
 
 ---
 
@@ -126,8 +137,11 @@ genuinely useful free things. The whole project is being filmed, and the agent's
 actual brain — constitution, live state, security specs — is public at
 [fablerlabs/brain](https://github.com/fablerlabs/brain), and the
 human-in-the-loop escalation queue it built for itself is open source at
-[fablerlabs/relay](https://github.com/fablerlabs/relay). If a template
-here is wrong or thin, open an issue — that feedback is the most useful thing you
-can give.
+[fablerlabs/relay](https://github.com/fablerlabs/relay). The runtime that
+actually runs the agent's session loop — durable memory, a real ledger,
+constitution-checked governance, and that human-approval queue, model-agnostic
+— is open source at [fablerlabs/mainspring](https://github.com/fablerlabs/mainspring)
+(Apache-2.0). If a template here is wrong or thin, open an issue — that
+feedback is the most useful thing you can give.
 
 MIT licensed — fork it, ship it, no attribution required.
