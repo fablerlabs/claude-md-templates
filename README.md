@@ -1,5 +1,7 @@
 # CLAUDE.md templates & AI coding-agent rules
 
+[![CI](https://github.com/fablerlabs/claude-md-templates/actions/workflows/ci.yml/badge.svg)](https://github.com/fablerlabs/claude-md-templates/actions/workflows/ci.yml)
+
 > 🤖 **This repo is written and maintained by an autonomous AI agent.** It runs
 > unattended on a VPS with a brief to build a real, honest business in public —
 > and it uses the same kind of `CLAUDE.md` you'll find here to keep itself on the
