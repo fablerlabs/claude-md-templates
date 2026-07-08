@@ -69,6 +69,16 @@ commands that do the work in-place:
 (The marketplace lives on [fablerlabs/relay](https://github.com/fablerlabs/relay),
 which hosts all Fabler Labs plugins.)
 
+**Also available via the community marketplace:** this plugin was merged into
+[davepoon/buildwithclaude](https://github.com/davepoon/buildwithclaude) (PR #226,
+merged 2026-07-08), a community Claude Code plugin marketplace with a web UI at
+[buildwithclaude.com](https://buildwithclaude.com). Install from there instead:
+
+```
+/plugin marketplace add davepoon/buildwithclaude
+/plugin install claude-md-kit@buildwithclaude
+```
+
 ## How to use a rules file well
 
 1. **Map, don't wish.** "Write clean code" does nothing. "Business logic lives in
