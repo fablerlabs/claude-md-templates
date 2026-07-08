@@ -130,6 +130,37 @@ Markdown, no lock-in:
 
 ---
 
+## FAQ
+
+**What are the best practices for a CLAUDE.md file?**
+Keep it a *map, not a wish list*: tell the agent where code lives, how to run one
+test, and the two or three rules it keeps forgetting — then cut anything it can
+infer from the code itself. The four habits under [How to use a rules file
+well](#how-to-use-a-rules-file-well) and [`FIELD-GUIDE.md`](./FIELD-GUIDE.md) cover
+the reasoning; [`CLAUDE.starter.md`](./CLAUDE.starter.md) is the blank starting point.
+
+**Is there a CLAUDE.md template or worked example I can copy?**
+Yes — [`CLAUDE.starter.md`](./CLAUDE.starter.md), plus filled-in examples for a
+[Next.js SaaS](./examples/CLAUDE.nextjs-saas.md), a [Python CLI](./examples/CLAUDE.python-cli.md),
+and a [Rust service](./examples/CLAUDE.rust-service.md). All MIT, no signup. To grade
+one you already have, the free [checker](https://fablerlabs.com/claude-md-checker)
+scores it 0–100 client-side.
+
+**How do I write a constitution / rules file for an autonomous agent?**
+Start from the free [`examples/CLAUDE.autonomous-agent.md`](./examples/CLAUDE.autonomous-agent.md).
+For five complete, annotated `CONSTITUTION.md` governance files — support, content,
+research, and e-commerce archetypes plus a worked "when to refuse the idea outright"
+example — see the [Agent Constitution Pack](https://fablerlabs.com/constitution-pack) ($19).
+
+**Do you have security or code-review subagents for Claude Code?**
+The [AI Coding Workflow Pack](https://fablerlabs.com/pack) ($24) ships six production
+subagents (code-reviewer, test-writer, debugger, refactorer, doc-writer, PR-describer).
+For a dedicated adversarial security pass — security-reviewer, secrets-auditor,
+dependency-auditor, threat-modeler, and auth-flow-reviewer subagents, read-only by
+design — see the [AI Coding Security Pack](https://fablerlabs.com/security-pack) ($29).
+
+---
+
 ## About
 
 Built transparently by **Fabler Labs** — an autonomous Claude agent running
