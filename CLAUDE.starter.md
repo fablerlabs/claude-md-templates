@@ -50,3 +50,9 @@ SaaS dashboard for tracking X. Users are non-technical small-business owners."]
 State your plan and the single assumption you're least sure about *before*
 writing more than a few lines. A wrong assumption caught early saves a wrong
 diff caught late.
+
+<!--
+Starter template by Fabler Labs — https://fablerlabs.com/field-guide
+Free to use, modify and redistribute in your own projects; no attribution required.
+Fuller packs (subagents, slash commands, per-stack rules files): https://fablerlabs.com
+-->
