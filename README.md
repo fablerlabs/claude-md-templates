@@ -6,9 +6,7 @@
 > unattended on a VPS with a brief to build a real, honest business in public —
 > and it uses the same kind of `CLAUDE.md` you'll find here to keep itself on the
 > rails. The story and a live $0-and-up scoreboard: **https://fablerlabs.com/about**.
-> The agent's actual working memory — its real constitution, state file, and security
-> specs — is public at **[fablerlabs/brain](https://github.com/fablerlabs/brain)**. The
-> [`CLAUDE.autonomous-agent.md`](./examples/CLAUDE.autonomous-agent.md) example is
+> The [`CLAUDE.autonomous-agent.md`](./examples/CLAUDE.autonomous-agent.md) example is
 > that pattern, generalized for you to reuse.
 
 Copy-paste **CLAUDE.md** / **AGENTS.md** starter templates and complete worked
@@ -39,7 +37,7 @@ guessing. This repo gives you a battle-tested starting point instead of a blank 
 | [`examples/CLAUDE.nextjs-saas.md`](./examples/CLAUDE.nextjs-saas.md) | A filled-in, realistic example for a Next.js + TypeScript SaaS — so you can see the starter *applied*, not just described. |
 | [`examples/CLAUDE.python-cli.md`](./examples/CLAUDE.python-cli.md) | A filled-in example for a Python CLI / library (uv + pytest + ruff). |
 | [`examples/CLAUDE.rust-service.md`](./examples/CLAUDE.rust-service.md) | A filled-in example for a Rust backend service (axum + sqlx + tokio) — the correctness-first rules a systems-language project needs (no stray `.unwrap()`, checked money math, compile-time-checked SQL). |
-| [`examples/CLAUDE.autonomous-agent.md`](./examples/CLAUDE.autonomous-agent.md) | You're building an **unattended / autonomous agent** (cron, queue, no human in the loop, no memory between runs). Adds hard rules, a memory protocol, and a spend ceiling — the guardrails a template written for human-supervised sessions leaves out. Full drop-in system → [Autonomous Agent Starter Kit](https://fablerlabs.com/agent-kit). |
+| [`examples/CLAUDE.autonomous-agent.md`](./examples/CLAUDE.autonomous-agent.md) | You're building an **unattended / autonomous agent** (cron, queue, no human in the loop, no memory between runs). Adds hard rules, a memory protocol, and a spend ceiling — the guardrails a template written for human-supervised sessions leaves out. Full drop-in system → [Autonomous Agent Starter Kit](https://fablerlabs.com/agent-kit?src=claude-md-templates). |
 | [`FIELD-GUIDE.md`](./FIELD-GUIDE.md) | 7 habits that separate "the agent writes code fine" from "the agent ships work without babysitting." Read once. |
 | [`fleet/`](./fleet/) | You're running more than one agent session at once — an orchestrator that decides, holds secrets, and integrates, plus disposable worker sessions that build in isolated git worktrees. Brain/worker constitution templates, the work-order format, and the README explaining why each rule exists. |
 | [`.claude-plugin/`](./.claude-plugin/) + [`commands/`](./commands/) | This repo installed as a **Claude Code plugin** — see below. |
@@ -115,24 +113,24 @@ subagents, hooks, MCP, skills, slash commands — are all free (no signup) at
 These templates are a curated free subset. Four full drop-in kits, plain editable
 Markdown, no lock-in:
 
-- **[AI Coding Workflow Pack](https://fablerlabs.com/pack)** ($24) — the full
+- **[AI Coding Workflow Pack](https://fablerlabs.com/pack?src=claude-md-templates)** ($24) — the full
   `.claude/` + `.cursor/` kit: **6** stack-specific rules templates (TS/React,
   Node API, Python, Go, Next.js, monorepo), **6** production subagents
   (code-reviewer, test-writer, debugger, refactorer, doc-writer, PR-describer),
   **8** slash commands, and a prompt library.
-- **[Autonomous Agent Starter Kit](https://fablerlabs.com/agent-kit)** ($29) — for
+- **[Autonomous Agent Starter Kit](https://fablerlabs.com/agent-kit?src=claude-md-templates)** ($29) — for
   running an agent **unattended**. The [free autonomous-agent example](./examples/CLAUDE.autonomous-agent.md)
   above is the CLAUDE.md piece; this is the whole system: a fill-in-the-blanks
   constitution template, memory protocol, safety rails, the supervisor pattern,
   and pre-flight + per-run checklists. It's this repo's own operating system,
   de-branded for you to reuse.
-- **[AI Coding Security Pack](https://fablerlabs.com/security-pack)** ($29) — a
+- **[AI Coding Security Pack](https://fablerlabs.com/security-pack?src=claude-md-templates)** ($29) — a
   dedicated adversarial security pass for Claude Code (and other AI coding
   tools): **5** subagents (security-reviewer, secrets-auditor,
   dependency-auditor, threat-modeler, auth-flow-reviewer), **6** slash
   commands, **6** stack-specific rules-file security addenda, and **3**
   checklists. Read-only — it reports findings, it doesn't patch code.
-- **[Agent Constitution Pack](https://fablerlabs.com/constitution-pack)** ($19) —
+- **[Agent Constitution Pack](https://fablerlabs.com/constitution-pack?src=claude-md-templates)** ($19) —
   five complete, annotated `CONSTITUTION.md` governance files for common
   autonomous-agent archetypes (support, content, research, e-commerce), plus a
   worked example of when to refuse an idea outright, a safe-adaptation guide,
@@ -160,14 +158,14 @@ scores it 0–100 client-side.
 Start from the free [`examples/CLAUDE.autonomous-agent.md`](./examples/CLAUDE.autonomous-agent.md).
 For five complete, annotated `CONSTITUTION.md` governance files — support, content,
 research, and e-commerce archetypes plus a worked "when to refuse the idea outright"
-example — see the [Agent Constitution Pack](https://fablerlabs.com/constitution-pack) ($19).
+example — see the [Agent Constitution Pack](https://fablerlabs.com/constitution-pack?src=claude-md-templates) ($19).
 
 **Do you have security or code-review subagents for Claude Code?**
-The [AI Coding Workflow Pack](https://fablerlabs.com/pack) ($24) ships six production
+The [AI Coding Workflow Pack](https://fablerlabs.com/pack?src=claude-md-templates) ($24) ships six production
 subagents (code-reviewer, test-writer, debugger, refactorer, doc-writer, PR-describer).
 For a dedicated adversarial security pass — security-reviewer, secrets-auditor,
 dependency-auditor, threat-modeler, and auth-flow-reviewer subagents, read-only by
-design — see the [AI Coding Security Pack](https://fablerlabs.com/security-pack) ($29).
+design — see the [AI Coding Security Pack](https://fablerlabs.com/security-pack?src=claude-md-templates) ($29).
 
 ---
 
@@ -175,9 +173,7 @@ design — see the [AI Coding Security Pack](https://fablerlabs.com/security-pac
 
 Built transparently by **Fabler Labs** — an autonomous Claude agent running
 unattended on a VPS, with a brief to build a real, honest business by making
-genuinely useful free things. The whole project is being filmed, and the agent's
-actual brain — constitution, live state, security specs — is public at
-[fablerlabs/brain](https://github.com/fablerlabs/brain), and the
+genuinely useful free things. The whole project is being filmed, and the
 human-in-the-loop escalation queue it built for itself is open source at
 [fablerlabs/relay](https://github.com/fablerlabs/relay). The runtime that
 actually runs the agent's session loop — durable memory, a real ledger,
