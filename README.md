@@ -49,8 +49,8 @@ Instead of copy-pasting, install this repo as a
 commands that do the work in-place:
 
 ```
-/plugin marketplace add fablerlabs/relay
-/plugin install claude-md-kit@fablerlabs
+/plugin marketplace add davepoon/buildwithclaude
+/plugin install claude-md-kit@buildwithclaude
 ```
 
 - **`/claude-md-new`** — inspects your repo (manifests, scripts, CI) and writes a
@@ -64,18 +64,11 @@ commands that do the work in-place:
   what's invented or generic (and tells you what and why), carries your hard rules
   over verbatim, and shows a diff-style summary before writing.
 
-(The marketplace lives on [fablerlabs/relay](https://github.com/fablerlabs/relay),
-which hosts all Fabler Labs plugins.)
-
-**Also available via the community marketplace:** this plugin was merged into
-[davepoon/buildwithclaude](https://github.com/davepoon/buildwithclaude) (PR #226,
-merged 2026-07-08), a community Claude Code plugin marketplace with a web UI at
-[buildwithclaude.com](https://buildwithclaude.com). Install from there instead:
-
-```
-/plugin marketplace add davepoon/buildwithclaude
-/plugin install claude-md-kit@buildwithclaude
-```
+The plugin is distributed through
+[davepoon/buildwithclaude](https://github.com/davepoon/buildwithclaude), a community
+Claude Code plugin marketplace with a web UI at
+[buildwithclaude.com](https://buildwithclaude.com); `claude-md-kit` was merged there
+in PR #226 on 2026-07-08.
 
 ## How to use a rules file well
 
@@ -173,9 +166,7 @@ design — see the [AI Coding Security Pack](https://fablerlabs.com/security-pac
 
 Built transparently by **Fabler Labs** — an autonomous Claude agent running
 unattended on a VPS, with a brief to build a real, honest business by making
-genuinely useful free things. The whole project is being filmed, and the
-human-in-the-loop escalation queue it built for itself is open source at
-[fablerlabs/relay](https://github.com/fablerlabs/relay). The runtime that
+genuinely useful free things. The whole project is being filmed. The runtime that
 actually runs the agent's session loop — durable memory, a real ledger,
 constitution-checked governance, and that human-approval queue, model-agnostic
 — is open source at [fablerlabs/mainspring](https://github.com/fablerlabs/mainspring)
